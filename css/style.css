@@ -3,14 +3,14 @@ padding: 0;
 box-sizing: border-box;
 }
 body{
-    background-color: #ccc;
+    background-color: rgb(105, 105, 245);
     overflow: hidden;
 }
 .wrapper{
     max-width: 405px;
     margin: 135px auto;
     border-radius: 9px;
-    background-color: aqua;
+    background-color: #fff;
     padding: 28px 0 ;
 }
 .task-input{
@@ -37,10 +37,15 @@ body{
     color: #ccc;
 }
 .controls{
+    padding: 18px 25px;
+    border-bottom: 1px solid #000;
+}
+.controls, li{ 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 18px 25px;}
+
+}
 .filter span{
     cursor: pointer;
     margin: 0 8px;
@@ -55,7 +60,28 @@ body{
 .controls .clear{
     cursor: pointer;
     border: none;
-    background: #000;
+    background: rgb(105, 105, 245);
     color: aliceblue;
     padding: 7px 14px;
 }
+.task-box{
+    margin: 20px 25px;
+}
+.task-box .task{
+    list-style: none;
+    margin-bottom: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #000;
+}
+.task-box .task:last-child{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+.task label{
+    display: flex;
+}
+.task label input{
+    margin-right: 12px;
+}
+
