@@ -85,3 +85,35 @@ body{
     margin-right: 12px;
 }
 
+.task .settings{
+    cursor: pointer;
+    position: relative;
+}
+.settings .task-menu{
+    position: absolute;
+    padding: 5px 0;
+    right: -5px;
+    bottom: -60px;
+    z-index: 2;
+    transform: scale(0);
+    transform-origin: top right;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+    background: #fff;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+}
+.settings:hover .task-menu{
+    transform: scale(1);
+}
+.task-menu li{
+    height: 25px;
+    font-size: 16px;
+    padding: 15px 16px;
+    margin-bottom: 2px;
+    justify-content: flex-start;
+}
+
+.task-menu li:hover{
+    background: #ccc;
+}
+
